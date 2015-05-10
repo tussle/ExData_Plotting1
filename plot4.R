@@ -7,7 +7,7 @@ plot(dt, assdf[assdf[,5]!="?",5], type = "l", xlab = "datetime", ylab = "Voltage
 plot(dt,as.numeric(assdf[assdf[,7]!="?",7]),type="l",xlab="",ylab="Energy Sub Metreing", main="GlobalActive Power")
 lines(dt, as.numeric(assdf[assdf[,8]!="?",8]), type = "l", col = "red")
 lines(dt, as.numeric(assdf[assdf[,9]!="?",9]), type = "l", col = "blue")
-legend("topright", lty = 1, col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), cex=.1)
+legend("topright", lty = 1, col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), cex=.5)
 plot(dt, assdf[assdf[,4]!="?",4], ylim = c(0.0, 0.5),  type = "l", xlab = "datetime", ylab = "Global_reactive_power")
 dev.copy(png,"plot4.png")
 dev.off()
